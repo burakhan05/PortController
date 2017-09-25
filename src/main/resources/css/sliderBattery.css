@@ -1,0 +1,16 @@
+.progress-bar{
+    -fx-background-image :url("../images/battery1.png");
+    -fx-pref-height: 138;
+    -fx-pref-width: 256;
+}
+.progress-bar .track{
+     -fx-background-color: #e74c3c;
+     -fx-background-insets: 8 0 8 0;
+     -fx-background-radius: 6, 6, 6, 6;
+ }
+
+.progress-bar .bar {
+    -fx-background-color: #2ecc71;
+    -fx-background-insets: 8 0 8 0;
+    -fx-background-radius: 6, 6, 6, 6;
+}

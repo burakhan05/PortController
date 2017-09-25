@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane fx:id="borderPaneApp" stylesheets="@../css/mainstyle.css" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hamzaburakhan.PortController.Controller">
+
+    <center>
+        <TabPane stylesheets="@../css/tabStyle.css" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+            <tabs>
+                <Tab text="Portlar">
+                    <content>
+                        <VBox>
+                            <children>
+                                <TableView fx:id="porttable" VBox.vgrow="ALWAYS">
+                                    <columns>
+                                        <TableColumn text="PID Name">
+                                            <cellValueFactory>
+                                                <PropertyValueFactory property="proccessName" />
+                                            </cellValueFactory>
+                                        </TableColumn>
+                              <TableColumn text="Port">
+                                 <cellValueFactory>
+                                    <PropertyValueFactory property="port" />
+                                 </cellValueFactory>
+                              </TableColumn>
+                                        <TableColumn text="Protocol">
+                                            <cellValueFactory>
+                                                <PropertyValueFactory property="protocol" />
+                                            </cellValueFactory>
+                                        </TableColumn>
+                                        <TableColumn text="Local Address">
+                                            <cellValueFactory>
+                                                <PropertyValueFactory property="localAddress" />
+                                            </cellValueFactory>
+                                        </TableColumn>
+                                        <TableColumn text="Foreign Address">
+                                            <cellValueFactory>
+                                                <PropertyValueFactory property="foreignAddress" />
+                                            </cellValueFactory>
+                                        </TableColumn>
+                              <TableColumn text="State">
+                                 <cellValueFactory>
+                                    <PropertyValueFactory property="state" />
+                                 </cellValueFactory>
+                              </TableColumn>
+                              <TableColumn text="PID">
+                                 <cellValueFactory>
+                                    <PropertyValueFactory property="PID" />
+                                 </cellValueFactory>
+                              </TableColumn>
+                                    </columns>
+                                    <columnResizePolicy>
+                                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                    </columnResizePolicy>
+                                </TableView>
+                            </children>
+                        </VBox>
+                    </content></Tab>
+
+            </tabs>
+        </TabPane>
+    </center>
+</BorderPane>

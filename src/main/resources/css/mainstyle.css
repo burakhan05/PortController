@@ -1,0 +1,22 @@
+#borderPaneApp{
+    /*-fx-background-color: #91CED7;*/
+    -fx-background-color: #FAFAFA;
+}
+
+.button{
+    -fx-background-color: #2B5C7A ;
+    -fx-text-fill: #F7F3EF;
+}
+
+.choice-box{
+    -fx-background-color: #2B5C7A ;
+    -fx-text-fill: #F7F3EF;
+     -fx-mark-color: #F7F3EF;
+}
+
+.choice-box .context-menu {
+    -fx-background-color: #2B5C7A ;
+}
+.choice-box .label {
+    -fx-text-fill: white;
+}
